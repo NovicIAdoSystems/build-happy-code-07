@@ -40,7 +40,7 @@ export function AppHeader({ actor, onSignOut }: { actor?: Actor; onSignOut: () =
   );
 }
 
-export function FeedbackBanner({ message, tone }: { message?: string; tone?: "success" | "error" }) {
+export function FeedbackBanner({ message, tone }: { message?: string | undefined; tone?: "success" | "error" | undefined }) {
   if (!message) return null;
 
   return (

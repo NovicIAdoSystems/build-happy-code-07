@@ -6,8 +6,8 @@ import { Input } from "@/components/ui/input";
 
 export const Route = createFileRoute("/login")({
   validateSearch: (search: Record<string, unknown>) => ({
-    err: typeof search.err === "string" ? search.err : undefined,
-    msg: typeof search.msg === "string" ? search.msg : undefined,
+    err: typeof search["err"] === "string" ? search["err"] : undefined,
+    msg: typeof search["msg"] === "string" ? search["msg"] : undefined,
   }),
   head: () => ({
     meta: [
